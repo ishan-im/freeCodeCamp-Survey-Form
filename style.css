@@ -1,0 +1,183 @@
+*{
+    font-size: 1.125rem;
+}
+
+
+body{
+   
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    object-fit: fill;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+#title{
+    font-size: 2rem;
+    padding: .5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+#description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-style: italic;
+    padding: .75rem;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+
+.form-div{
+    
+  
+   
+    color:aliceblue;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    
+}
+
+#survey-form{
+    background-color: rgba(27, 27, 50, 0.8);  
+    border-radius: 4px;
+    
+}
+
+
+
+
+
+.div-form{
+    width:50vw;
+    font-size: 1.2rem;
+    padding:.25rem;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+}
+
+div label{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left:2rem ;
+    margin-top: 1rem;
+    margin-bottom: .76rem;
+    width: 90%;
+    border-radius: .35rem;
+}
+
+div input{
+    width: 90%;
+    height: 2rem;
+    border-radius: .4rem;
+}
+
+div input:focus-within{
+    border: 2px solid red;
+    outline:none;
+}
+
+div p{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 1.35em;  
+}
+
+div select{
+    width: 90%;
+    height: 2rem;
+    border-radius: .35rem;
+}
+
+
+input[type=radio], input[type=checkbox]{
+width: 1.0rem;
+height: 1.0rem;
+}
+
+
+.input-textarea {
+ min-height: 8rem;
+ width:90%;
+ margin-bottom: 1rem;;
+
+}
+.input-textarea:focus-within{
+    border: 2px solid red;
+    outline:none;
+}
+
+.submit-button{
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 2rem;
+    background:linear-gradient(90deg,#1D976C,#3CD3AD) ;
+    
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    *{
+        font-size: 1rem;
+    }
+    .div-form{
+        width: 98vw;
+    }
+
+    #title{
+        font-size:1.2rem;
+    }
+
+    #description{
+        font-size: .85rem;
+    }
+    
+    body{
+        overflow-x: hidden;
+    }
+
+}
+@media (min-width:600px) and (max-width:900px) {
+    
+    *{
+        font-size: 1.1rem;
+    }
+
+    .div-form{
+        width: 85vw;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+
+
+
+
+
+
